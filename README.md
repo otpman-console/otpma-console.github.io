@@ -1,4 +1,4 @@
-# otpman-console.github.io
+# otpman-app
 #🀄️[作品名] 麻雀×クエスト　レトロなドット絵RPG
 
 ##サービス概要
