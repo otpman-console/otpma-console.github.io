@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介</title>
+    <!-- CSS：見た目をデザインする場所 -->
+    <style>
+        /* ページ全体のデザイン */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+          background: linear-gradient(#473B7B 0%, #3584A7 51%, #30D2BE 100%);
+            /* 背景が途中で繰り返されないように固定する */
+            background-attachment: fixed; 
+            
+            color: #333333; /* 文字の色 */
+            text-align: center; /* 文字を真ん中に寄せる */
+            padding: 50px 20px;
+        }
+
+        /* プロフィールカードの枠 */
+        .profile-card {
+            background-color: white;
+            max-width: 400px;
+            margin: 0 auto; /* 真ん中に配置 */
+            padding: 30px;
+            border-radius: 15px; /* 角を丸くする */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 影をつける */
+        }
+
+        /* 見出し（名前） */
+        h1 {
+            color: #0076d6;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* 自己紹介の文章 */
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        /* 仕掛けボタン */
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        /* ボタンにマウスを乗せたときの動き */
+        button:hover {
+            background-color: #ff4747;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML：ページの骨組み・文字 -->
+    <div class="profile-card">
+        <h1>【otpman】の自己紹介</h1>
+        
+        <p><strong>otpman：</strong>ヒロキ</p>
+        <p><strong>趣味：</strong>歌,麻雀,サッカー観戦</p>
+        <p><strong>一言：</strong> JavaScriptを勉強中です！
+        <br>少しずつ素敵なホームページにしていきます。
+        <br>またこちらのHPには自分が作った作品を載せていきたいと思います。</p>
+        
+        <!-- JavaScriptを動かすボタン -->
+        <button onclick="greet()">挨拶ボタン</button>
+    </div>
+
+    <!-- JavaScript：動きをつける場所 -->
+    <script>
+        function greet() {
+            // ブラウザにポップアップを出す
+            alert("見に来てくれてありがとうございます！");
+            // 最初に覚えた、タブのタイトルを変える技！
+            document.title = "★訪問ありがとう！★";
+        }
+    </script>
+
+</body>
+</html>
+
+    
